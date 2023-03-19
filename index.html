@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sourav Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <!-- <img src="images/logo.png" class="logo"> -->
+            <div class="logo">
+                <h1>So<span>ur</span>av.</h1>
+            </div>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <!-- <li><a href="#services">Services</a></li> -->
+                    <li><a href="#portfolio">My Project</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="row1">
+                <div class="row1-col-1">
+                    <p>B.Tech ECE Student</p>
+                    <h1>Hi, I'm <span class="multiple-text"></span><br><h2>From</h2><h3>
+                        Vill - Ramdevpur, P.O - Chetua Rajnagar,<br> P.S - Daspur, Dist - Paschim Medinipur,<br> Pin - 721211, State - West Bengal</h3></h1>
+                </div>
+                <div class="row1-col-2">
+                    <img src="images/sourav2.jpg">
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <!-- ----------------about-------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/sourav.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>To apply my knowledge and skills for
+                        the advancement of the organization as well as looking for the
+                        opportunity where I can gain experience and improve my overall
+                        skills.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <!-- <p class="tab-links" onclick="opentab('cv')">Download CV</p> -->
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                           
+                            <li><span>PROGRAMING LANGUAGE</span><br>→ C <br>→HTML <br>→ CSS<br>→ Django <br>→ Java (continue)<br>→ JavaScript (continue)</li>
+                            <li><span>TRAINING</span><br>→ WEB DEVELOPMENT <br>
+                                Feb-2023 (Continuing)<br>
+                                → JAVA TRAINING<br>
+                                 Jan-2023 <br>
+                                → HTML, CSS, JS, Bootstrap<br>
+                                 (Aug-Sep)2022,Jan-2023(continuing)</li>
+                                 <li><span>LANGUAGE KNOWN</span><br>→ Bengali<br>→ English <br>→ Hindi </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>WEATHER WEBSITE</span><br>Design Web/App useing HTML,CSS & JavaScript</li>
+                            <li><span>PERSONAL WEBSITE</span><br>Web App Developing by HTML,CSS & JavaScript</li>
+                            <li><span>BLOGING WEBSITE</span><br>Creating Web Application useing Python & Django</li>
+                            <li><span>PROJECT</span><br>Building a Smart Helmet for accident prevention on bike</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020-2024</span><br>Gargi Memorial Institute of Technology (GMIT)<br>
+                                Bachelor of Technology BTech in Electronics and Communication Engineering (ECE)<br>
+                                From Balarampur, Baruipur, 24 South Paragana<br>
+                                CGPA-9.5 (Till 5th semester)
+                            </li>
+                            <li><span>2011-2020</span><br>Rajnagar Union High School (RUHS)<br>
+                                West Bengal Council of Secondary Education (WBCSE)<br>
+                                West Bengal Council of Higher Secondary Education (WBCHSE)<br>
+                                From Rajnagar, Daspur, Paschim Medinipur<br>
+                                Percentage: 73.2%
+                            </li>
+                            <!-- <li><span>2020</span><br>BBA from ISM Bangalore </li> -->
+                        </ul>
+                    <!-- </div>
+                    <div class="tab-contents" id="cv">
+                    <ul>
+                       <li> <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a></li>
+                    </ul>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------services----------------- -->
+    <!-- <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quidem perferendis hic et dolorem
+                        accusantium aperiam, autem doloremque exercitationem tempore pariatur ipsum molestias odio nam
+                        quaerat nulla ut distinctio. Magni?</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quidem perferendis hic et dolorem
+                        accusantium aperiam, autem doloremque exercitationem tempore pariatur ipsum molestias odio nam
+                        quaerat nulla ut distinctio. Magni?</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fab fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quidem perferendis hic et dolorem
+                        accusantium aperiam, autem doloremque exercitationem tempore pariatur ipsum molestias odio nam
+                        quaerat nulla ut distinctio. Magni?</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- ----------------portfolio----------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Project</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Sourav Website</h3>
+                        <p>The app connects you to the talented people around the world.
+                            Download it from play store.
+                        </p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Ecommerce App</h3>
+                        <p>The app connects you to the talented people around the world.
+                            Download it from play store.
+                        </p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <!-- <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>The app connects you to the talented people around the world.
+                            Download it from play store.
+                        </p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div> -->
+                <div class="work">
+                    <img src="images/weather.jpg">
+                    <div class="layer">
+                        <h3>Weather App</h3>
+                        <p>The app connects you to access the current weather data for any location including over
+                            200,000 cities.
+                        </p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- ----------------contact----------------- -->
+
+    <div id="contact">
+
+        <div class="container">
+            <div class="row">
+
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+
+                    <p><i class="fas fa-paper-plane"></i> sourav11321@gmail.com</p>
+
+                    <p><i class="fas fa-phone-square-alt"></i> 8515820261</p>
+
+                    <div class="social-icons">
+
+                        <a href="https://www.facebook.com/sourav.badyopadhyay?mibextid=ZbWKwL"><i
+                                class="fab fa-facebook"></i></a>
+                        <a href=""><i class="fab fa-twitter-square"></i></a>
+                        <a href="https://instagram.com/sourav_11321?igshid=ZDdkNTZiNTM="><i
+                                class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.youtube.com/@ouravcreates6201"><i class="fab fa-youtube"></i></a>
+                        <a href="https://github.com/Sourav11321"><i class="fab fa-github"></i></a>
+
+                        </div>
+                        <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                        </div>
+
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message "></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+
+                    </form>
+                    <span id="msg"></span>
+
+                </div>
+
+
+            </div>
+
+        </div>
+       
+    </div>
+
+    <!-- ----------------footer design-------------- -->
+
+    
+        <div class="footer-text">
+            
+                <p>Copyright @ Sourav. Made with <a href="#header"><i class="fas fa-heart"></i></a> by Sourav Bandopadhyay</p>
+            
+        </div>
+    
+    
+
+    <!-- ----------------scroll reveal-------------- -->
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<!-- ----------------type.js-------------- -->
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+   
+<!-- --------custom js--------- -->
+
+    <script src="script.js"> </script>
+    
+</body>
+
+</html>
